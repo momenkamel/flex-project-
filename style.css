@@ -1,0 +1,136 @@
+html, ody, div, span, applet, oject, iframe,
+h1, h2, h3, h4, h5, h6, p, lockquote, pre,
+a, ar, acronym, address, ig, cite, code,
+del, dfn, em, img, ins, kd, q, s, samp,
+small, strike, strong, su, sup, tt, var,
+, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, lael, legend,
+tale, caption, tody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, emed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruy, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	order: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: aseline;
+}
+/* HTML5 display-role reset for older rowsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: lock;
+}
+ody {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+lockquote, q {
+	quotes: none;
+}
+lockquote:efore, lockquote:after,
+q:efore, q:after {
+	content: '';
+	content: none;
+}
+talbe {
+	order-collapse: collapse;
+	order-spacing: 0;
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&______Styling start from here______&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+body{
+  background-color: #E0EF3;
+}
+.main-container{
+  display:flex;
+  height:60%;
+  width:90%;
+  position: relative;
+  margin:auto;
+  top :5%;
+  flex-direction:row;
+}
+
+.s-container{
+  flex-basis: 70%;
+  display: flex;
+  padding-right: 20px;
+  flex-direction: column;
+}
+
+.sup-container1{
+  flex-grow: 1;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.item1,.item5{
+  flex-grow:2;
+}
+.item2,.item4{
+  flex-grow: 1; 
+}
+.item1{
+  background-color: hsl(263, 55%, 52%);
+  margin:0 15px 0 0 ;
+}
+.item2{
+  background-color: hsl(217, 19%, 35%);
+}
+
+
+.sup-container2{
+  flex-grow:1;
+  display: flex;
+}
+
+.item4{
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 15px 0 0;
+}
+.item5{
+  background-color: hsl(219, 29%, 14%);
+}
+.vertical-container{
+  flex-grow:2;
+  padding:5px;
+  display: flex;
+}
+
+
+.item3{
+  flex-grow:1;
+  background-color: hsl(0, 0%, 100%);
+
+}
+.item1,.item2,.item3,.item4,.item5{
+  border-radius:5px;
+  padding: 15px 10px ;
+  box-shadow: 9px 9px 15px 11px #c9d3da;
+  
+}
+
+@media(max-width:900px){
+  .main-container{
+    flex-direction: column;
+  }
+  .sup-container1,.sup-container2,.vertical-container{
+    flex-direction: column;
+  }
+  .item1,.item2,.item3,.item4,.item5{
+    flex-grow:1;
+  }
+  .item1,.item4{
+    margin: 0 0 0 0;
+  }
+  .item2,.item5,.item4,.item3{
+    margin: 25px 0 0 0;
+  }
+  .s-container{
+    padding: 0;
+  }
+}
