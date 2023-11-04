@@ -45,14 +45,27 @@ talbe {
 body{
   background-color: #E0EF3;
 }
+p{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color:hsl(210, 46%, 95%)
+}
+.item4>p{
+  color: hsl(219, 29%, 14%);
+}
+.item3>p{
+  color: hsl(219, 29%, 14%);
+}
+
+
 .main-container{
   display:flex;
-  height:60%;
-  width:90%;
+  /*height:60%;
+  width:90%;*/
   position: relative;
   margin:auto;
   top :5%;
   flex-direction:row;
+
 }
 
 .s-container{
@@ -62,6 +75,18 @@ body{
   flex-direction: column;
 }
 
+.header{
+  display: flex;
+  padding-top:0;
+}
+.text>p{
+  margin:0 0 0 10px;
+  align-self:flex-start;
+}
+
+img{
+  border-radius:50%;
+}
 .sup-container1{
   flex-grow: 1;
   display: flex;
@@ -96,27 +121,30 @@ body{
   background-color: hsl(219, 29%, 14%);
 }
 .vertical-container{
-  flex-grow:2;
+  flex-basis:30%;
   padding:5px;
   display: flex;
+  
 }
 
 
 .item3{
   flex-grow:1;
   background-color: hsl(0, 0%, 100%);
-
 }
 .item1,.item2,.item3,.item4,.item5{
   border-radius:5px;
   padding: 15px 10px ;
   box-shadow: 9px 9px 15px 11px #c9d3da;
-  
 }
 
+.c>p{
+  color: hsl(219, 29%, 14%);
+}
 @media(max-width:1200px){
   .main-container{
     flex-direction: column;
+    padding: 0 30px 30px 30px;
   }
   .sup-container1,.sup-container2,.vertical-container{
     flex-direction: column;
